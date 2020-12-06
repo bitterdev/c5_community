@@ -1,0 +1,55 @@
+<!--
+   Project:     c5 community
+  
+   @copyright 2018 Fabian Bitter
+   
+   @author Adrian Tillmann Geist (a.t.geist@gmx.de)
+   @author Fabian Bitter (fabian@bitter.de)
+   
+   @version 1.0.0
+-->
+<ion-header>
+    <ion-navbar color="concrete">
+        <ion-title>
+            Start New Discussion
+        </ion-title>
+        
+        <ion-buttons end>
+            <button ion-button (click)="createDiscussion()">
+                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-item>
+        <ion-label>
+            Choose a Forum
+        </ion-label>
+
+        <ion-select [(ngModel)]="selectedForum" placeholder="Please select">
+            <ion-option *ngFor="let forum of forums" value="{{ forum.value }}" >
+                {{ forum.label }}
+            </ion-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-list>
+        <ion-item>
+            <ion-label>Subject</ion-label>
+            <ion-input type="text" [(ngModel)]="title" placeholder="Please enter"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Message</ion-label>
+            <ion-textarea type="text" [(ngModel)]="message" placeholder="Please enter"></ion-textarea>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Tags</ion-label>
+            <ion-input type="text" [(ngModel)]="tags" placeholder="Please enter"></ion-input>
+        </ion-item>
+    </ion-list>
+</ion-content>
+

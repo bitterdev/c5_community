@@ -1,0 +1,41 @@
+{
+  "name": "c5community",
+  "app_id": "com.bitterwebentwicklung.c5community",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  },
+  "proxies": [
+    {
+        "path": "/login",
+        "proxyUrl": "https://www.concrete5.org/login"    
+    }, {
+        "path": "/profile",
+        "proxyUrl": "https://www.concrete5.org/profile"    
+    }, {
+        "path": "/login/-/do_login/",
+        "proxyUrl": "https://www.concrete5.org/login/-/do_login/"
+    }, {
+        "path": "/login/-/logout/",
+        "proxyUrl": "https://www.concrete5.org/login/-/logout/"
+    }, {
+        "path": "/community/forums",
+        "proxyUrl": "https://www.concrete5.org/community/forums"
+    }, {
+        "path": "/community/forums/-/add/",
+        "proxyUrl": "https://www.concrete5.org/community/forums/-/add/"
+    }, {
+        "path": "/community/forums/-/view/",
+        "proxyUrl": "https://www.concrete5.org/community/forums/-/view/"
+    }, {
+        "path": "/community/forums/*/-/reply",
+        "proxyUrl": "https://www.concrete5.org/community/forums/themes/adding-ccm-account-menu-to-custom-theme/-/reply"
+    }, {
+        "path": "/community/forums/*/*",
+        "proxyUrl": "https://www.concrete5.org/community/forums/themes/adding-ccm-account-menu-to-custom-theme/?displayStyle=flat"
+    }, {
+        "path": "/login/-/forgot_password/",
+        "proxyUrl": "https://www.concrete5.org/login/-/forgot_password/"
+    }  
+  ]
+}

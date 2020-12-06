@@ -1,0 +1,39 @@
+<!--
+   Project:     c5 community
+  
+   @copyright 2018 Fabian Bitter
+   
+   @author Adrian Tillmann Geist (a.t.geist@gmx.de)
+   @author Fabian Bitter (fabian@bitter.de)
+   
+   @version 1.0.0
+-->
+<ion-header>
+    <ion-navbar color="concrete">
+        <ion-title>
+            Login
+        </ion-title>
+
+        <ion-buttons end >
+            <button ion-button icon-only (click)="openMenu()">
+                <ion-icon name="more"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+        <ion-item>
+            <ion-label>Username</ion-label>
+            <ion-input type="text" [(ngModel)]="username" placeholder="Please enter"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Password</ion-label>
+            <ion-input type="password" [(ngModel)]="password" placeholder="Please enter"></ion-input>
+        </ion-item>
+    </ion-list>
+
+    <button ion-button block (click)="login()" color="concrete">Sign In</button>
+</ion-content>

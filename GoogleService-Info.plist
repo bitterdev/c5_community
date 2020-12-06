@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>493644354091-rles0id561hdb24np7g8ohrja26u1l90.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.493644354091-rles0id561hdb24np7g8ohrja26u1l90</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCf2LyV47lkhE3KzAQ0kDL2vyLrE4U5TZM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>493644354091</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.bitterwebentwicklung.c5community</string>
+	<key>PROJECT_ID</key>
+	<string>c5-community</string>
+	<key>STORAGE_BUCKET</key>
+	<string>c5-community.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:493644354091:ios:61d943c0579c3cea</string>
+	<key>DATABASE_URL</key>
+	<string>https://c5-community.firebaseio.com</string>
+</dict>
+</plist>

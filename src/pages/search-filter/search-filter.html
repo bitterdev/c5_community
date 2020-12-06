@@ -1,0 +1,71 @@
+<!--
+   Project:     c5 community
+  
+   @copyright 2018 Fabian Bitter
+   
+   @author Adrian Tillmann Geist (a.t.geist@gmx.de)
+   @author Fabian Bitter (fabian@bitter.de)
+   
+   @version 1.0.0
+-->
+<ion-header>
+    <ion-navbar color="concrete">
+        <ion-title>
+            Search Filter
+        </ion-title>
+
+        <ion-buttons end>
+            <button ion-button (click)="save()">
+                <i class="fa fa-floppy-o" aria-hidden="true"></i>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-item>
+        <ion-label>
+            Search Term
+        </ion-label>
+
+        <ion-input [(ngModel)]="searchProvider.filter.searchTerm" placeholder="Enter Search Term" class="search-term"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>
+            Filter By Forum
+        </ion-label>
+
+        <ion-select [(ngModel)]="searchProvider.filter.filterByForum" placeholder="Please select" multiple>
+            <ion-option *ngFor="let forum of forums" value="{{ forum.value }}" >
+                {{ forum.label }}
+            </ion-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>
+            Sort By
+        </ion-label>
+
+        <ion-select [(ngModel)]="searchProvider.filter.sortBy" placeholder="Please select">
+            <ion-option *ngFor="let sortOrder of sortOrders" value="{{ sortOrder.value }}" >
+                {{ sortOrder.label }}
+            </ion-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>
+            Filter By Answered
+        </ion-label>
+
+        <ion-select [(ngModel)]="searchProvider.filter.filterByAnswer" placeholder="Please select">
+            <ion-option *ngFor="let answerFilter of answerFilters" value="{{ answerFilter.value }}" >
+                {{ answerFilter.label }}
+            </ion-option>
+        </ion-select>
+    </ion-item>
+</ion-content>
+
+

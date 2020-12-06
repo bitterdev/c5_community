@@ -1,0 +1,15 @@
+/**
+ * Project:     c5 community
+ *
+ * @copyright 2018 Fabian Bitter
+ * 
+ * @author Adrian Tillmann Geist (a.t.geist@gmx.de)
+ * @author Fabian Bitter (fabian@bitter.de)
+ * 
+ * @version 1.0.0
+ */
+     
+export interface JsonResponse {
+    html: string;
+    errors: any;
+}
